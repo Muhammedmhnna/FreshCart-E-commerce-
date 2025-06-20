@@ -15,12 +15,12 @@ import ProductDetails from "./components/Pages/ProductDetails/ProductDetails.jsx
 import CheckOut from "./components/Pages/Checkout/Checkout.jsx";
 import AllOrders from "./components/Pages/AllOrders/AllOrders.jsx";
 import WishList from "./components/Pages/WishList/WishList.jsx";
-import WishListContextProvider from "./Context/WishListContext.jsx";
 import CartContextProvider from "./Context/CartContext.jsx";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "./../node_modules/@tanstack/react-query-devtools/src/index";
 
 import { Toaster } from "react-hot-toast";
+import WishListContextProvider from "./Context/WishlistContext.jsx";
 
 
 let query = new QueryClient();
@@ -121,6 +121,7 @@ function App() {
 
   return (
     <>
+
       <WishListContextProvider>
         <CartContextProvider>
           <QueryClientProvider client={query}>
@@ -132,6 +133,7 @@ function App() {
           </QueryClientProvider>
         </CartContextProvider>
       </WishListContextProvider>
+
       ;
     </>
   );
