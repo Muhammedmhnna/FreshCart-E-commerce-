@@ -6,7 +6,7 @@ import { FaStar, FaShoppingCart, FaTrash } from "react-icons/fa";
 import { toast } from "react-hot-toast";
 import { WishListContext } from "../../../Context/WishlistContext";
 
-export default function WishList() {
+export default function Wishlist() {
   const { addToCart } = useContext(CartContext);
   const { wishLists, removeFromWishList } = useContext(WishListContext);
 

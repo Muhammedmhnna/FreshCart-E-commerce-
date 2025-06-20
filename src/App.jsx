@@ -14,7 +14,7 @@ import ProtectedRoute from "./components/component/ProtectedRoute/ProtectedRoute
 import ProductDetails from "./components/Pages/ProductDetails/ProductDetails.jsx";
 import CheckOut from "./components/Pages/Checkout/Checkout.jsx";
 import AllOrders from "./components/Pages/AllOrders/AllOrders.jsx";
-import WishList from "./components/Pages/WishList/WishList.jsx";
+import Wishlist from "./components/Pages/Wishlist/Wishlist.jsx";
 import CartContextProvider from "./Context/CartContext.jsx";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "./../node_modules/@tanstack/react-query-devtools/src/index";
@@ -90,10 +90,10 @@ let router = createBrowserRouter([
         ),
       },
       {
-        path: "wishList",
+        path: "wishlist",
         element: (
           <ProtectedRoute>
-            <WishList />
+            <Wishlist />
           </ProtectedRoute>
         ),
       },
