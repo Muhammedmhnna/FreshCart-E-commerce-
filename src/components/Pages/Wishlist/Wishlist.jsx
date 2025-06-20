@@ -2,9 +2,9 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { CartContext } from "../../../Context/CartContext";
-import { WishListContext } from "../../../Context/WishListContext";
 import { FaStar, FaShoppingCart, FaTrash } from "react-icons/fa";
 import { toast } from "react-hot-toast";
+import { WishListContext } from "../../../Context/WishlistContext";
 
 export default function WishList() {
   const { addToCart } = useContext(CartContext);
