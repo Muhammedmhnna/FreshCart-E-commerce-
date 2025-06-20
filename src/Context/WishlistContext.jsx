@@ -33,7 +33,6 @@ export default function WishListContextProvider({ children }) {
     }
   }
 
-  // ADD TO WISHLIST
   async function wishList(productId) {
     const token = localStorage.getItem("userToken");
     if (!token) {
@@ -57,7 +56,6 @@ export default function WishListContextProvider({ children }) {
     }
   }
 
-  // REMOVE FROM WISHLIST
   async function removeFromWishList(productId) {
     const token = localStorage.getItem("userToken");
     if (!token) {
