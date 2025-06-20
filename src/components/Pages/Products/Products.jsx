@@ -5,8 +5,8 @@ import { ThreeDots } from "react-loader-spinner";
 import { motion } from "framer-motion";
 import useProducts from "../../../Hooks/useProducts";
 import { CartContext } from "../../../Context/CartContext";
-import { WishListContext } from "../../../Context/WishListContext";
 import { toast } from "react-toastify";
+import { WishListContext } from "../../../Context/WishlistContext";
 
 export default function Products() {
   const { addToCart, cartItems } = useContext(CartContext);

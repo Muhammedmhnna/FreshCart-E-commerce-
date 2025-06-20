@@ -26,22 +26,6 @@ export default function CartContextProvider({ children }) {
     }
   }
 
-  // async function wishList(productId) {
-  //   try {
-  //     let { data } = await axios.post(
-  //       `https://ecommerce.routemisr.com/api/v1/wishlist`,
-  //       { productId },
-  //       { headers }
-  //     );
-  //     toast.success("Product added to your wish list", {
-  //       duration: 3000,
-  //     });
-  //     console.log(data);
-  //     setCartItems(data);
-  //   } catch (error) {
-  //     console.log(error);
-  //   }
-  // }
 
   async function checkOutSession(shippingAddress) {
     try {

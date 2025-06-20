@@ -6,7 +6,7 @@ import { FaStar, FaHeart, FaShoppingCart, FaSearch } from "react-icons/fa";
 import { ThreeDots } from "react-loader-spinner";
 import { motion, AnimatePresence } from "framer-motion";
 import { CartContext } from "../../../Context/CartContext";
-import { WishListContext } from "../../../Context/WishListContext";
+import { WishListContext } from "../../../Context/WishlistContext";
 
 export default function RecentProducts() {
   const { addToCart } = useContext(CartContext);
